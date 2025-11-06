@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{ragged2e} % justify
+\input{glyphtounicode}
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+\usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{3.60004pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Abderrazzaq Laanaoui} \\ \vspace{12pt}
+    44000 Nantes, France $ | $ +33 7 80 84 82 51 $ | $ \href{mailto:abderrazzaq.laanaoui@gmail.com}{\underline{abderrazzaq.laanaoui@gmail.com}} $ | $ 
+    \href{https://linkedin.com/in/abderrazzaq-laanaoui}{\underline{Linkedin}} $ | $
+    \href{https://github.com/abderrazzaq-laanaoui}{\underline{Github}}
+\end{center}
+
+%-----------OBJECTIF PROFESSIONNEL-----------
+\section{Objectif Professionnel}
+\justifying
+Passionné par la cybersécurité et le développement logiciel, je cherche un poste en CDI où je pourrai concevoir et sécuriser des solutions logicielles performantes. Fort d’une expertise en IAM, architecture sécurisée et DevSecOps, je souhaite évoluer dans un environnement innovant qui me permet d’approfondir mes compétences tout en apportant une réelle valeur ajoutée à l’entreprise.
+
+%-----------COMPÉTENCES TECHNIQUES-----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Développement :} Java, Spring Boot, Node.js, Express, Nest.js, REST, SOAP, gRPC,  Postman,  Jira \\
+        \textbf{Cybersécurité Offensive :} Tests d’intrusion, Burp Suite, ZAP, Sécurité API, WAF \\
+        \textbf{Cybersécurité Défensive :} IAM (OAuth2, OpenID, SAML), SIEM, VPN, Hardening Windows/Linux \\
+        \textbf{DevOps \& Cloud :} Docker, Kubernetes, Ansible, Gitlab CI/CD, ArgoCD, SonarQube, Xray Artifactory, Azure, Google Cloud
+    }}
+\end{itemize}
+
+%-----------EXPÉRIENCE PROFESSIONNELLE-----------
+\section{Expérience Professionnelle}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stagiaire \& Alternant Développeur Java}{Mai 2024 - août 2025}
+      {Crédit Agricole Technologies et Services | Nantes, France}{}
+    \resumeItemListStart
+        \resumeItem{Développement et maintenance des solutions d'authentification sécurisées (OAuth2, OpenID Connect, SAML), \\ renforçant la sécurité des applications utilisées par les collaborateurs et les clients Crédit Agricole.}
+        \resumeItem{Participation active aux rituels SCRUM : estimation des récits en points de complexité, prise en charge de récits,\\ rédaction de récits techniques et échanges avec l’équipe sur les spécifications et solutions techniques.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Ingénieur Logiciel}{Juin - août 2023}
+      {Smarte Collecte | Casablanca, Maroc}{}
+      \resumeItemListStart
+        \resumeItem{Conception et développement d’applications avec Flutter, Angular et Firebase, Firebase Authentication.}
+        \resumeItem{Management d’une équipe de 5 personnes et gestion agile des tâches.}
+        \resumeItem{\textbf{\textit{Résultat clé :}} Réduction du temps de traitement des données de $\approx$ 30\%.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Ingénieur Logiciel}{Juillet - octobre 2022}
+      {UpWork | Remote, Canada }{}
+      \resumeItemListStart
+        \resumeItem{Développement avec Node.js, Express, React, et technologies de stockage distribué comme IPFS et Orbit-DB.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Développeur de Logiciels}{Mai - juin 2021}
+      {École Supérieure d'Ingénierie Automobile et Aéronautique (ESI2A) | Fès, Maroc}{}
+      \resumeItemListStart
+        \resumeItem{Développement d’applications avec Angular, NestJS, TypeORM, MySQL, et Node.js.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Développeur Web Freelance}{Juin - septembre 2020}
+      {ATM INTER TRANS sarl | Berrechid, Maroc}{}
+      \resumeItemListStart
+        \resumeItem{Développement avec PHP, MySQL, Bootstrap, JQuery, HTML/CSS/JavaScript}
+      \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+  %-----------ÉDUCATION-----------
+\section{Éducation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ENSIBS : École Nationale Supérieure d'Ingénieurs de Bretagne Sud }{Vannes, France}
+      {Diplôme d'Ingénieur, Informatique et Cybersécurité, Option Cybersécutité du Logiciel}{2023-2025}
+    \resumeSubheading
+      {UBS : Université Bretagne Sud}{Vannes, France}
+      {M2 INFORMATIQUE - Science Informatique }{2024-2025}
+    \resumeSubheading
+      {ENSET : École Normale Supérieure de l'Enseignement Technique}{Mohammedia, Maroc}
+      {Diplôme d'Ingénieur, Génie du Logiciel et des Systèmes Informatiques Distribués}{2021-2024}
+    \resumeSubheading
+      {EST : École Supérieure de Technologie}{Fès, Maroc}
+      {Diplôme Universitaire de Technologie (DUT), Informatique, Option Génie Logiciel}{2019-2021}
+  \resumeSubHeadingListEnd
+
+%-----------Compétitions-----------
+\section{Compétitions}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{TRACS} $|$ \emph{4\textsuperscript{ ème} prix}}{Édition 2024}
+          \resumeItemListStart
+            \resumeItem{TRACS est une compétition de data science, de sécurité et de cryptanalyse, organisée  par  la DGSE.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{EMSI NEXT-GEN HACKATHON} $|$ \emph{1\textsuperscript{ er} prix }}{Édition 2023}
+          \resumeItemListStart
+            \resumeItem{Application basée sur un LLM pour interagir avec des personnalités historiques à des fins éducatives.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{ENSET Media GEIW HACKATHON} $|$ \emph{2\textsuperscript{ ème} prix }}{Édition 2023}
+          \resumeItemListStart
+            \resumeItem{Solution blockchain pour le stockage sécurisé des données médicales, alimentant un modèle d'IA prédictif.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------LANGUES-----------
+\section{Langues}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Arabe :} Natif \hspace{15pt}$|\hspace{1pt}$ 
+     \textbf{Français :} Niveau C1 \hspace{15pt}$|\hspace{1pt}$ 
+     \textbf{Anglais :} Niveau C1 (TOEIC 910/990)
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
